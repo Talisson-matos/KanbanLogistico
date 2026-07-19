@@ -1,0 +1,199 @@
+.task-info {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.task-info__section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-info__heading {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-faint);
+}
+
+.task-info__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 20px;
+  margin: 0;
+}
+
+.task-info__grid-full {
+  grid-column: 1 / -1;
+}
+
+.task-info__grid dt {
+  font-size: 0.72rem;
+  color: var(--color-text-faint);
+  margin-bottom: 2px;
+}
+
+.task-info__grid dd {
+  margin: 0;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.task-info__mono {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+}
+
+.task-info__checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.task-info__checklist li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: var(--color-text);
+}
+
+.task-info__checklist li.is-done {
+  color: var(--color-text-faint);
+  text-decoration: line-through;
+}
+
+.task-info__checkbox {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  border: 1.5px solid var(--color-border-strong);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  color: var(--color-success);
+  flex-shrink: 0;
+}
+
+.task-info__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: var(--color-text);
+}
+
+.task-info__list--history li {
+  display: flex;
+  gap: 10px;
+}
+
+.task-info__history-date {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--color-text-faint);
+  white-space: nowrap;
+}
+
+.task-info__empty {
+  font-size: 0.86rem;
+  color: var(--color-text-faint);
+  font-style: italic;
+}
+
+.task-info__add-observation {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.task-info__add-observation textarea {
+  resize: vertical;
+  min-height: 56px;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  font-size: 0.88rem;
+}
+
+.task-info__add-observation textarea:focus {
+  border-color: var(--color-accent);
+}
+
+.task-info__add-observation .btn {
+  align-self: flex-end;
+}
+
+.task-info__list--etapa li {
+  background: var(--color-primary-soft);
+  border-radius: var(--radius-sm);
+  padding: 7px 10px;
+}
+
+.task-info__stage-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.task-info__stage-section-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 6px;
+}
+
+.task-info__tag-atual {
+  font-size: 0.66rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-accent-dark);
+  background: var(--color-accent-soft);
+  padding: 1px 7px;
+  border-radius: 999px;
+}
+
+.task-info__sessions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.task-info__hint {
+  font-size: 0.78rem;
+  color: var(--color-text-faint);
+  margin-top: -4px;
+}
+
+.task-info__permanent-observation {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.task-info__permanent-observation textarea {
+  resize: vertical;
+  min-height: 64px;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  font-size: 0.88rem;
+  background: var(--color-accent-soft);
+}
+
+.task-info__permanent-observation textarea:focus {
+  border-color: var(--color-accent);
+}
+
+.task-info__permanent-observation .btn {
+  align-self: flex-end;
+}

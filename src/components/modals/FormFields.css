@@ -1,0 +1,114 @@
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.form-field:last-child {
+  margin-bottom: 0;
+}
+
+.form-field label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+.form-field input,
+.form-field textarea,
+.form-field select {
+  padding: 9px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: 0.9rem;
+  transition: border-color var(--transition-fast);
+}
+
+.form-field input:focus,
+.form-field textarea:focus,
+.form-field select:focus {
+  border-color: var(--color-accent);
+}
+
+.form-field textarea {
+  resize: vertical;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 16px;
+}
+
+.form-grid .form-field {
+  grid-column: span 1;
+}
+
+.form-grid .form-field--full {
+  grid-column: 1 / -1;
+}
+
+.form-hint {
+  font-size: 0.78rem;
+  color: var(--color-text-faint);
+  margin-top: 4px;
+}
+
+.form-hint--erro {
+  color: var(--color-danger);
+}
+
+.form-fieldset {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 14px 14px 4px;
+  margin: 0 0 16px;
+}
+
+.form-fieldset legend {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  padding: 0 6px;
+}
+
+.form-fieldset .form-grid {
+  margin: 0;
+}
+
+.form-field__prefixed {
+  display: flex;
+  align-items: stretch;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  transition: border-color var(--transition-fast);
+}
+
+.form-field__prefixed:focus-within {
+  border-color: var(--color-accent);
+}
+
+.form-field__prefix {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  background: var(--color-primary-soft);
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: var(--font-mono);
+}
+
+.form-field__prefixed input {
+  border: none;
+  border-radius: 0;
+  flex: 1;
+}
+
+.form-field__prefixed input:focus {
+  border-color: transparent;
+}

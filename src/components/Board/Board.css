@@ -1,0 +1,40 @@
+.board {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: flex-start;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0 18px 18px 0;
+  gap: 14px;
+}
+
+.board--loading {
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-faint);
+  font-size: 0.9rem;
+}
+
+.board--erro {
+  flex-direction: column;
+  gap: 6px;
+  text-align: center;
+  color: var(--color-danger);
+  font-weight: 600;
+}
+
+.board__erro-hint {
+  color: var(--color-text-faint);
+  font-weight: 400;
+  font-size: 0.8rem;
+  max-width: 440px;
+}
+
+.board__columns {
+  flex: 1;
+  display: flex;
+  gap: 14px;
+  padding: 18px 4px 4px 0;
+  height: 100%;
+}

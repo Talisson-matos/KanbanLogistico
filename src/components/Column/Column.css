@@ -1,0 +1,100 @@
+.column {
+  flex-shrink: 0;
+  width: 560px;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-surface-raised);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  max-height: 100%;
+}
+
+.column--final {
+  width: 340px;
+}
+
+.column__header {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding-bottom: 12px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--color-border);
+  flex-shrink: 0;
+}
+
+.column__header-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.column__order {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--color-accent-dark);
+  background: var(--color-accent-soft);
+  border-radius: 6px;
+  padding: 2px 7px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.column__title {
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.column__description {
+  margin-top: 3px;
+  font-size: 0.74rem;
+  color: var(--color-text-faint);
+  line-height: 1.35;
+}
+
+.column__filter-btn {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  color: var(--color-text-faint);
+  transition: background-color var(--transition-fast), color var(--transition-fast),
+    border-color var(--transition-fast);
+}
+
+.column__filter-btn:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent-dark);
+}
+
+.column__filter-btn.is-active {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-text-inverse);
+}
+
+.column__body {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  padding-right: 2px;
+}
+
+.column:not(.column--final) .column__body > .subcolumn:first-child {
+  padding-right: 10px;
+  border-right: 1px dashed var(--color-border);
+}
+
+.column:not(.column--final) .column__body > .subcolumn:last-child {
+  padding-left: 10px;
+}

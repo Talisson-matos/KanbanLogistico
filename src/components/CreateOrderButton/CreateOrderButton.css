@@ -1,0 +1,20 @@
+.create-order {
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-start;
+  padding: 18px 14px 18px 18px;
+  position: sticky;
+  left: 0;
+  z-index: 4;
+  background: linear-gradient(90deg, var(--color-bg) 78%, rgba(244, 245, 247, 0));
+}
+
+.create-order__btn {
+  box-shadow: var(--shadow-sm);
+}
+
+.create-order__icon {
+  font-size: 1.05rem;
+  line-height: 1;
+  font-weight: 700;
+}
